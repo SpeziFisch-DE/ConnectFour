@@ -1,0 +1,16 @@
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.exe
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.deps.json
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.runtimeconfig.json
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.runtimeconfig.dev.json
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.dll
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ref\ConnectFourApp.dll
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Debug\net5.0\ConnectFourApp.pdb
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.csprojAssemblyReference.cache
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.AssemblyInfoInputs.cache
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.AssemblyInfo.cs
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.csproj.CoreCompileInputs.cache
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.dll
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ref\ConnectFourApp.dll
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.pdb
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\obj\Debug\net5.0\ConnectFourApp.genruntimeconfig.cache
