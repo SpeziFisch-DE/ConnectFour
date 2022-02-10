@@ -1,0 +1,22 @@
+[
+  {
+    "username": "123",
+    "password": "123",
+    "statsLink": 0
+  },
+  {
+    "username": "1234",
+    "password": "123",
+    "statsLink": 1
+  },
+  {
+    "username": "12345",
+    "password": "123",
+    "statsLink": 2
+  },
+  {
+    "username": "123456",
+    "password": "123",
+    "statsLink": 3
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "timesPlayed": 0,
+    "timesWon": 0
+  },
+  {
+    "timesPlayed": 0,
+    "timesWon": 0
+  },
+  {
+    "timesPlayed": 0,
+    "timesWon": 0
+  },
+  {
+    "timesPlayed": 0,
+    "timesWon": 0
+  }
+]

@@ -19,7 +19,6 @@ namespace ConnectFour.Display
         }
 
         public void DisplayText() {
-            Console.SetCursorPosition(0,0);
             Console.Write(currentScreen);
         }
     }
