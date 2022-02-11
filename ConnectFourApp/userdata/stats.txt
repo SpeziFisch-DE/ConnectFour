@@ -3,5 +3,10 @@
     "timesPlayed": 4,
     "timesWon": 2,
     "timesLost": 1
+  },
+  {
+    "timesPlayed": 0,
+    "timesWon": 0,
+    "timesLost": 0
   }
 ]

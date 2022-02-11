@@ -3,10 +3,5 @@
     "username": "123",
     "password": "123",
     "statsLink": 0
-  },
-  {
-    "username": "1234",
-    "password": "123",
-    "statsLink": 1
   }
 ]

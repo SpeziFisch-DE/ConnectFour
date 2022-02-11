@@ -1,0 +1,7 @@
+[
+  {
+    "username": "Fabian",
+    "password": "1234",
+    "statsLink": 0
+  }
+]

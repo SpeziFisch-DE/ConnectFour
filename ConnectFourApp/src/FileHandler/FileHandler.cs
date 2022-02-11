@@ -9,6 +9,16 @@ namespace ConnectFour.FileHandler
     {
         private static string currentSavePath = Environment.CurrentDirectory;
 
+        public static void CreateFile (string relPath, string dataName) {
+            string directoryPath = currentSavePath + relPath;
+            string path = currentSavePath + relPath + "/" +  dataName;
+            if (!File.Exists(path))
+            {
+                Directory.CreateDirectory(directoryPath);
+                File.WriteAllText(path, "[]");
+            }
+        }
+
         public static void OverwriteFile (string relPath, string dataName, string text) {
             string directoryPath = currentSavePath + relPath;
             string path = currentSavePath + relPath + "/" +  dataName;

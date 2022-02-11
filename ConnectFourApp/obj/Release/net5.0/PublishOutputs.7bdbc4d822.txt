@@ -1,0 +1,5 @@
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Release\net5.0\publish\ConnectFourApp.exe
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Release\net5.0\publish\ConnectFourApp.dll
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Release\net5.0\publish\ConnectFourApp.deps.json
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Release\net5.0\publish\ConnectFourApp.runtimeconfig.json
+C:\Users\SpeziFisch\Documents\GitHub\ConnectFour\ConnectFourApp\bin\Release\net5.0\publish\ConnectFourApp.pdb

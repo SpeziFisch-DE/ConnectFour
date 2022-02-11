@@ -1,0 +1,7 @@
+[
+  {
+    "timesPlayed": 1,
+    "timesWon": 1,
+    "timesLost": 0
+  }
+]
