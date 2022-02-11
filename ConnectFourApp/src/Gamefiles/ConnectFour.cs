@@ -11,7 +11,7 @@ namespace ConnectFour.Game
     {
         string[][] field;
         int winCount;
-        bool AI = false;
+        bool ai = false;
 
         public Game(int x, int y, int winCount, bool ai)
         {
@@ -26,7 +26,7 @@ namespace ConnectFour.Game
 
             }
             this.winCount = winCount;
-            AI = ai;
+            this.ai = ai;
         }
 
         public static Game CreateGameFromConsole()
@@ -159,7 +159,7 @@ namespace ConnectFour.Game
                 game.DrawField();
                 Console.WriteLine("");
 
-                if (!game.AI)
+                if (!game.ai)
                 {
                     Console.WriteLine("player " + (playerTurn ? "X" : "O") + " choose a column:");
                 }
@@ -173,7 +173,7 @@ namespace ConnectFour.Game
                     choices = choices + "[" + i + "]";
                 }
                 Console.WriteLine(choices);
-                if (game.AI)
+                if (game.ai)
                 {
                     if (playerTurn)
                     {
