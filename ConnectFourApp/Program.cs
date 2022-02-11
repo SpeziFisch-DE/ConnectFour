@@ -14,7 +14,7 @@ namespace ConnectFourApp
     {
         static void Main(string[] args)
         {
-            Menu[] menu = Menu.CreateAllMenu();
+            Menu menu = Menu.GetInstance();
             int chosenMenu = 0;
             int statsLink = -1;
 
@@ -24,14 +24,14 @@ namespace ConnectFourApp
             do
             {
                 Console.Clear();
-                Console.WriteLine(menu[chosenMenu].title);
+                Console.WriteLine(menu.menu[chosenMenu].title);
                 Console.WriteLine("");
                 if (chosenMenu == 0)
                 {
                     Console.WriteLine("");
-                    for (int i = 0; i < menu[chosenMenu].choices.Length; i++)
+                    for (int i = 0; i < menu.menu[chosenMenu].choices.Length; i++)
                     {
-                        Console.WriteLine("[" + menu[chosenMenu].linkedMenu[i] + "] " + menu[chosenMenu].choices[i]);
+                        Console.WriteLine("[" + menu.menu[chosenMenu].linkedMenu[i] + "] " + menu.menu[chosenMenu].choices[i]);
                     }
 
 
@@ -76,7 +76,7 @@ namespace ConnectFourApp
 
                             do
                             {
-                                Console.WriteLine(menu[chosenMenu].choices[formPosition] + ": ");
+                                Console.WriteLine(menu.menu[chosenMenu].choices[formPosition] + ": ");
                                 if (formPosition == 0) // username validation
                                 {
                                     string pattern = "^[a-zA-Z0-9]{3,15}$";
@@ -151,7 +151,7 @@ namespace ConnectFourApp
                                     }
                                 }
 
-                            } while (formPosition < menu[chosenMenu].choices.Length);
+                            } while (formPosition < menu.menu[chosenMenu].choices.Length);
                             stats.Add(new UserStats());
                             newUser.statsLink = stats.ToArray<UserStats>().Length - 1;
                             statsLink = newUser.statsLink;
@@ -274,18 +274,45 @@ namespace ConnectFourApp
                     }
                     if (chosenMenu == 3) // Game
                     {
-                        Game newField = new Game(3,3);
-                        newField.DrawField();
+                        UserStats[] statsArr = Handler.ReadJSON<UserStats[]>("/userdata", "stats.txt");
+                        List<UserStats> stats = statsArr.ToList<UserStats>();
 
-                        input = Console.ReadLine();
+                        string winner = Game.DoGameLoop();
+                        if (winner == "X")
+                        {
+                            if (statsLink >= 0)
+                            {
+                                stats[statsLink].timesPlayed += 1;
+                                stats[statsLink].timesWon += 1;
+                                Handler.WriteJSON<UserStats[]>("/userdata", "stats.txt",stats.ToArray<UserStats>());
+                            }
+                        } else if (winner == "O") {
+                            if (statsLink >= 0)
+                            {
+                                stats[statsLink].timesPlayed += 1;
+                                stats[statsLink].timesLost += 1;
+                                Handler.WriteJSON<UserStats[]>("/userdata", "stats.txt",stats.ToArray<UserStats>());
+                            }                            
+                        } else {
+                            if (statsLink >= 0)
+                            {
+                                stats[statsLink].timesPlayed += 1;
+                                Handler.WriteJSON<UserStats[]>("/userdata", "stats.txt",stats.ToArray<UserStats>());
+                            }                            
+                        }
+                        Console.ReadKey();
+                        chosenMenu = 0;
                     }
                     if (chosenMenu == 4) // Stats
                     {
                         if (statsLink >= 0)
                         {
                             UserStats[] statsArr = Handler.ReadJSON<UserStats[]>("/userdata", "stats.txt");
-                            Console.WriteLine("You played " + statsArr[statsLink].timesPlayed + " times.");
-                            Console.WriteLine("You have won" + statsArr[statsLink].timesWon + " games.");
+                            Console.WriteLine("You have played " + statsArr[statsLink].timesPlayed + " games.");
+                            Console.WriteLine("You have won " + statsArr[statsLink].timesWon + " games.");
+                            Console.WriteLine("You have won " + (statsArr[statsLink].timesWon * 100/statsArr[statsLink].timesPlayed) + "% of your games.");
+                            Console.WriteLine("You have lost " + statsArr[statsLink].timesLost + " games.");
+                            Console.WriteLine("You have lost " + (statsArr[statsLink].timesLost * 100/statsArr[statsLink].timesPlayed) + "% of your games.");
                         }
                         else
                         {

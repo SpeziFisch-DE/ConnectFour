@@ -1,18 +1,7 @@
 [
   {
-    "timesPlayed": 0,
-    "timesWon": 0
-  },
-  {
-    "timesPlayed": 0,
-    "timesWon": 0
-  },
-  {
-    "timesPlayed": 0,
-    "timesWon": 0
-  },
-  {
-    "timesPlayed": 0,
-    "timesWon": 0
+    "timesPlayed": 4,
+    "timesWon": 2,
+    "timesLost": 1
   }
 ]
